@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="image/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+
+<body>
+ 
+  <div class="container">
+   <div class="navbar">
+       <div class="logo">
+         <a href="image/wakao1.html">  <img src="image/MAK%20CARD%20g.png" width="125px"></a>
+       </div>
+       <nav>
+           <ul id="MenuItems">
+               <li><a href="image/wakao1.html">Home</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="#">About us</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="account.html">Account</a></li>
+           </ul>
+       </nav>
+       <img src="image/CARD%20CARD.png" width="30px" height="30px">
+       <img src="image/MENU%20CARD.png" class="menu-icon" onclick="menutoggle()">
+   </div>
+   
+   </div>
+    
+     <!------About us ------->
+     
+     
+
+ <section class="testimonials">
+     <div class="container">
+         <h1>About us</h1>
+         <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita fugiat nisi facilis tempore unde, optio nostrum odit alias odio vitae quos itaque? Accusantium, quod, eveniet.</p>
+        
+             <div class="row">
+               <div class="col-md-4 text-center">
+                   <div class="profile">
+                       <img src="image/1%20rasm%20about%20copy.jpg" class="user">
+                       <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, dolorum, reprehenderit sint vel aperiam animi debitis, quas at consequatur ab cum distinctio, doloremque illum. Et, sunt, aspernatur. Fugit, officia provident.
+                       </blockquote>
+                       <h3>Wakaocell lining Skin <span>One of the main cosmetic</span></h3>
+                       
+                   </div>
+               </div>
+               
+                <div class="col-md-4 text-center">
+                   <div class="profile">
+                       <img src="image/2%20rasm%20about%20copy.jpg" class="user">
+                       <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, dolorum, reprehenderit sint vel aperiam animi debitis, quas at consequatur ab cum distinctio, doloremque illum. Et, sunt, aspernatur. Fugit, officia provident.
+                       </blockquote>
+                       <h3>Wakaocell  <span>Logo at Wakaocell</span></h3>
+                       
+                   </div>
+               </div>
+               
+                <div class="col-md-4 text-center">
+                   <div class="profile">
+                       <img src="image/3%20rasm%20about%20copy.jpg" class="user">
+                       <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, dolorum, reprehenderit sint vel aperiam animi debitis, quas at consequatur ab cum distinctio, doloremque illum. Et, sunt, aspernatur. Fugit, officia provident.
+                       </blockquote>
+                       <h3> TMR <span>KOREA and JAPAN logo at Wakaocell</span></h3>
+                       
+                   </div>
+               </div>
+               
+         </div>
+     </div>
+ </section>
+ 
+ 
+ 
+  <!------footer------->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                     <p>Download App for Android and ios mobile phone.</p>
+                     <div class="app-logo">
+                         <img src="image/IOC%20CARD.png">
+                         <img src="image/STORE%20CARD.jpg">
+                     </div>
+                </div>
+               
+                <div class="fotter-col-2">
+                    <img src="image/CARD%20COS.JPG" width="125"px>
+                    <p>Our purposed is to sustainably make the delight and benefits <br>of  cosmetics accessible to the many.</p>
+                    
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful link</h3>
+                    <ul>
+                        <li>coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return-Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul> 
+                       <li>Facebook</li>
+                       <li>Twitter</li>
+                       <li>Instagram</li>
+                       <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Wakaocell-2020 cosmetics</p>
+        </div>
+    </div>
+   
+    <!-------js for toggle menu -------->
+    <script>
+       var MenuItems = document.getElementById("MenuItems")
+       
+       MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+    
+    
+    <!-------js for toggle form -------->
+    
+    <script>
+         
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        
+           function register(){
+               
+               RegForm.style.transform = "translateX(0px)";
+               LoginForm.style.transform = "translateX(0px)";
+               Indicator.style.transform = "translateX(100px)";
+           } 
+        
+           function login(){
+               
+               RegForm.style.transform = "translateX(300px)";
+               LoginForm.style.transform = "translateX(300px)";
+               Indicator.style.transform = "translateX(0px)";
+           }
+             
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
+
+  
+  
+   
+  
+
+   
+   
+
+

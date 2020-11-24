@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Wakaocell</title>
+    <link rel="stylesheet" href="image/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+</head>
+
+<body>
+ <div class="header">
+  <div class="container">
+   <div class="navbar">
+       <div class="logo">
+         <a href="wakao1.html"> <img src="image/Mak%20.png" width="125px"></a>
+       </div>
+       <nav>
+           <ul id="MenuItems">
+               <li><a href="wakao1.html">家</a></li>
+               <li><a href="/wakaocee/products.html">製品</a></li>
+               <li><a href="/wakaocee/About%20us.html">私たちに関しては</a></li>
+               <li><a href="/wakaocee/contact.html">連絡先</a></li>
+               <li><a href="/wakaocee/account.html">アカウント</a></li>
+              
+                <li class="fright">
+               言語
+               <select onchange="set_language()" name="language">
+                  <option value="en">EN</option>
+                 <a href="wakaoJP.html">  <option value="jp">JP</option></a>
+                   <option value="">CN</option>
+                   <option value="jp">RU</option>
+                   <option value="jp">UZ</option>
+               </select>
+               </li>
+               
+           </ul>
+       </nav>
+      <a href="/wakaocee/card.html"> <img src="image/CARD%20CARD.png" width="30px" height="30px"></a>
+       <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+   </div>
+   <div class="row">
+       <div class="col-2">
+           <h3>高貴な<br>始まりの肌で生まれたばかり!!</h3>
+           <p>唯一！ワカオセルの健康な肌とメイクを同時に！ </p>
+           <a href="" class="btn">今すぐ探索 &#8594;</a>
+       </div>
+         
+           <div class="col-2">
+             <img src="image/gooo.png">
+       </div>
+   </div>
+   </div>
+    </div>
+    
+    
+    <!-------- featured categories-------->
+    
+    
+<div class="gallery mt-4">
+ <h2 class="title handling-title py-5 text-center"><?php echo $langCode['OurMenu']; ?></h2>
+ <div class="row mx-0">
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="" alt="slide-image2" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="" alt="slide-image3" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="<?php echo $front_img_url; ?>/index/11-560x560.jpg" alt="slide-image4" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="<?php echo $front_img_url; ?>/index/bing-slider-10.jpg" alt="slide-image5" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="<?php echo $front_img_url; ?>/index/bek-gallery-2-1.jpg" alt="slide-image6" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="<?php echo $front_img_url; ?>/index/bek-gallery-10-1.jpg" alt="slide-image7" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="<?php echo $front_img_url; ?>/index/Becoffee-Dessert-7-560x560.jpg" alt="slide-image8" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="<?php echo $front_img_url; ?>/index/grid8.jpg" alt="slide-image9" class="img-fluid" />
+   </a>
+  </div>
+  <div class="col-20 p-0">
+   <a href="#">
+    <img src="<?php echo $front_img_url; ?>/index/2-560x560.jpg" alt="slide-image10" class="img-fluid" />
+   </a>
+  </div>
+ </div>
+</div>
+    
+       <!-------- featured products-------->
+       <div class="container">
+       <div class="container">
+       <div class="small-container">
+           <h2 class="title">おすすめ商品</h2>
+           <div class="row">
+               <div class="col-4">
+                   <a href="/wakaocee/product%20detalia.html"> <img src="image/skin%201.jpg"></a>
+                  <a href="/wakaocee/product%20detalia.html"> 
+                   <h4>ワカオセルリビングスキン</h4> </a>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>30.000 원</p>
+                   </div> 
+                  <div class="col-4">
+                  <a href="/wakaocee/loution.html"> <img src="image/loution1.jpg"> </a>
+                   <h4>ワカオセルリビングルーション</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>70.000 원</p>
+               </div> 
+                  <div class="col-4">
+                  <a href="/wakaocee/cream.html"> <img src="image/cream%201.jpg"> </a>
+               <h4>ワカオセルリビングクリーム</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>80.000 원</p>
+               </div>
+                   <div class="col-4">
+                   <img src="image/pinu%201.jpg">
+                   <h4>ワカオセル石鹸</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>32.000 원</p>
+               </div>
+           </div>
+       </div>
+       </div>
+       
+       
+       
+    <h2 class="title">最新の製品</h2>
+    <div class="row">
+               <div class="col-4">
+                   <img src="image/susomist%2001.jpg">
+                   <h4>WakaocellHealion水素ミスト</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>180.000 원</p>
+               </div> 
+                  <div class="col-4">
+                   <img src="image/libil%20card1%20.jpg">
+                   <h4>ワカオセル水素発生器</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>90.000 원</p>
+               </div> 
+                  <div class="col-4">
+                   <img src="image/sumka%20skin%201.jpg">
+                   <h4>ワカオセルブルーパール</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>30.000 원</p>
+               </div>
+                   <div class="col-4">
+                   <img src="image/pinu%200202.jpg">
+                   <h4>ワカオセル石鹸</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>7.000 원</p>
+               </div>
+                          <div class="row">
+               <div class="col-4">
+                   <img src="image/OIL%201.jpg">
+                   <h4>リハオイル</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>88.000 원</p>
+               </div> 
+                  <div class="col-4">
+                   <img src="image/sumka%20=.jpg">
+                   <h4>ワカオセルルーションオーロラポーチ</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                       <i class="fa fa-star-o"></i>
+                   </div>
+                   <p>30.000 원</p>
+               </div> 
+                  <div class="col-4">
+                   <img src="image/susomist%20010101-.jpg">
+                   <h4>ワカオセル水素ミスト詰め替え</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>45.000 원</p>
+               </div>
+                   <div class="col-4">
+                   <img src="image/ww%20case%2001.jpg">
+                   <h4>ワカオセルグリッターハートフォンリング</h4>
+                   <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <p>12.250 원</p>
+               </div>
+           </div>
+           </div>
+    </div>
+    
+    
+    
+    
+    <!---------offer--------->
+    
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="image/PNG.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                   <p>Wakaocellで独占的に利用可能</p>
+                   <h1>ワカオセルリビングシリーズ</h1>
+                   <small>
+                       Wakaocellのリビングライン製品
+ミネラルウォーターが含まれており、ミネラル分が豊富で肌の健康維持に大きく貢献します。
+                   </small>
+                   <a href="" class="btn">今買う &#8594;</a>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <!------testimonial------->
+    <div class="container">
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Wakaocellのすべての製品には、ラベルに真珠抽出物としてマークされた真珠が含まれています。真珠は有機鉱物であり、免疫力と耐久性を備えた自然の生き物です。</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <img src="image/fon%201.jpg">
+                   <h3>リビングクリーム</h3>
+                </div>
+                  <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>パールエキスは、毎日のメイクや年齢から広がった肌の毛穴を最小限に抑え、肌を透明で透明な外観に再生する生来の能力を持っています。 </p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <img src="image/fon%202.jpg">
+                   <h3>生きている肌</h3>
+                </div>
+                  <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>これまでに見られなかった新しいレベルの効果には、Loutionと健康のための多くの利点が含まれています。抗アガニン効果＆トラブルの解決に役立ちます</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-half-o"></i>
+                   </div>
+                   <img src="image/fon%203.jpg">
+                   <h3>生きているルーション</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <!-------brands------>
+    
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="image/MASTER%20CARD%20.jpg">
+                </div>
+                   <div class="col-5">
+                    <img src="image/KAKAO%20PAY.jpg">
+                </div>
+                   <div class="col-5">
+                    <img src="image/PAY%20PAL.jpg">
+                </div>
+                   <div class="col-5">
+                    <img src="image/VISA%20.%20CARd.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <!------footer------->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>私たちのアプリをダウンロード</h3>
+                     <p>AndroidおよびiOS携帯電話用のア<br>プリをダウンロードしてください。</p>
+                     <div class="app-logo">
+                         <img src="2%20app%20store.png">
+                         <img src="app%20store.jpg">
+                     </div>
+                </div>
+               
+                <div class="fotter-col-2">
+                    <img src="00000.JPG" width="125"px>
+                    <p>私たちの目的は、化粧品の喜びと利点を多<br>くの人が持続的に利用できるようにすることです。</p>
+                    
+                </div>
+                <div class="footer-col-3">
+                    <h3>便利なリンク</h3>
+                    <ul>
+                        <li>クーポン</li>
+                        <li>ブログ投稿</li>
+                        <li>返品規則</li>
+                        <li>アフィリエイトに参加する</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>フォローする</h3>
+                    <ul> 
+                        <a href=" https://m.facebook.com/wakaocellkr/" > <li>Facebook</li></a>
+                     <li>Twitter</li>
+                      <a href="https://www.instagram.com/wakaocell_official/"> <li>Instagram</li></a>
+                       <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Wakaocell-2020化粧品</p>
+        </div>
+    </div>
+   
+    <!-------js for toggle menu -------->
+    <script>
+       var MenuItems = document.getElementById("MenuItems")
+       
+       MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+        
+        
+        <!--------language-------->
+        
+        
+        
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
